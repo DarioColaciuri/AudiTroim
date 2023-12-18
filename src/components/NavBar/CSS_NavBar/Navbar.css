@@ -1,0 +1,63 @@
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(145, 158, 158);
+  padding-top: 1rem;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.logo-text {
+  font-size: 2rem;
+}
+
+.boton-menu {
+  background-color: transparent;
+  padding-right: 0;
+  border: 0;
+  align-items: center;
+  color: #eff7ff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 100%;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.inactive {
+  background-color: transparent;
+  color: white;
+}
+
+.hand {
+  transform: rotateZ(180deg);
+  width: 1.5rem;
+}
+
+.guitar,
+.bass,
+.electronic,
+.cart,
+.arrow {
+  width: 1.5rem;
+}

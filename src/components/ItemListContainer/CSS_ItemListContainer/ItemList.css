@@ -1,0 +1,15 @@
+.productos-frame {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.productos-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}

@@ -1,0 +1,17 @@
+.producto-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(145, 158, 158);
+  border-radius: 2rem;
+  align-items: center;
+  min-width: 21rem;
+  max-width: 21rem;
+  padding: 1rem;
+}
+
+.ver-mas {
+  background-color: rgb(89, 99, 99);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
