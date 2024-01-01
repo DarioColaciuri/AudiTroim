@@ -5,7 +5,7 @@ import './CSS_ItemListContainer/ItemList.css';
 const ItemList = ( {productos, title} ) => {
   return (
     <div className="productos-frame">
-      <h1 className="titulo-productos">{aMayuscula(title)}</h1>
+      <h1 className="titulo-productos">Productos</h1>
         <div className="productos-container">
         {
           productos.length > 0 &&

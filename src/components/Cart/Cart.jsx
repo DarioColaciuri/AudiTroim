@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../Context/CartContext'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -29,6 +30,7 @@ const Cart = () => {
         <>
         <h2>Precio total: ${precioTotal()}</h2>
         <button onClick={vaciarBtn}>Vaciar</button>
+        <Link to="/checkout">Comprar</Link>
         </> :
         <h2>No hay productos agregados.</h2>
         }
