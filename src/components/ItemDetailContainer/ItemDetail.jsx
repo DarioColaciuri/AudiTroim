@@ -1,26 +1,9 @@
 import './CSS_ItemDetailContainer/ItemDetail.css';
 import { aMayuscula } from "../extras/aMayuscula";
-import { useState } from 'react';
+import ItemCount from './ItemCount';
+
 
 const ItemDetail = ( {item, contador, setContador} ) => {
-
-    
-
-    const mostrarMensaje = () => {
-        alert(`Agregaste ${contador} unidades al carrito`)
-    }
-
-const sumar = () => {
-    if (contador < 5) {
-        setContador(contador + 1)
-    }
-}
-
-const restar = () => {
-    if (contador > 1) {
-        setContador(contador - 1)
-    }
-}
 
 return (
     <div className="producto-detail-container">
@@ -36,11 +19,7 @@ return (
                 <p className="producto-detail-categoria">{aMayuscula(item.category)}</p>
             </div>
         </div>
-        <div className="comprar">
-            <button className='menos-btn' onClick={restar}>-</button>
-            <button className='añadir-btn' onClick={mostrarMensaje}>Comprar {contador}</button>
-            <button className='mas-btn' onClick={sumar}>+</button>
-        </div>
+        <ItemCount contador={contador} setContador={setContador} item={item} />
         <p className="producto-detail-descripcion">{item.description}</p>
     </div>
 )

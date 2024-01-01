@@ -53,7 +53,7 @@
     max-width: 50rem;
 }
 
-.comprar {
+.comprar-component {
     display: flex;
     gap: 1rem;
 }
