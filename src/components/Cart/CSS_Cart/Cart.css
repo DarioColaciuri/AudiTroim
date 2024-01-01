@@ -1,0 +1,59 @@
+.producto-container-cart {
+    display: flex;
+    flex-direction: row;
+    min-width: 80vw;
+    justify-content: space-around;
+}
+
+.precio-total {
+    background-color: rgb(145, 158, 158);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.vaciar-btn {
+    padding: .4rem;
+    border-radius: 1rem;
+    border: solid .1rem black;
+    background-color: rgb(199, 59, 59);
+    transition: ease .3s;
+}
+
+.comprar-btn {
+    padding: .4rem;
+    border-radius: 1rem;
+    border: solid .1rem black;
+    background-color: rgb(62, 172, 104);
+    transition: ease .3s;
+    color: black;
+}
+
+.vaciar-btn:hover {
+    background-color: rgb(221, 140, 140);
+    color: black;
+}
+
+.comprar-btn:hover {
+    background-color: rgb(139, 231, 162);
+    color: black;
+}
+
+.container-btn-cart {
+    display: flex;
+    gap: 2rem;
+}
+
+.producto-imagen-cart {
+    width: 5rem;
+}
+
+.eliminar-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.eliminar-btn:hover {
+    filter: invert(100%);
+}

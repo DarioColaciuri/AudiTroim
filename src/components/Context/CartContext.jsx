@@ -41,7 +41,7 @@ useEffect(() => {
 
 
 return (
-    <CartContext.Provider value={ {cart, agregar, cartNumber, precioTotal, vaciar} } >
+    <CartContext.Provider value={ {cart, setCart, agregar, cartNumber, precioTotal, vaciar} } >
         {children}
     </CartContext.Provider>
 )

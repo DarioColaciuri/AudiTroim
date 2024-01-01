@@ -3,6 +3,8 @@ import { CartContext } from '../Context/CartContext';
 import { useForm } from 'react-hook-form';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
+import './CSS_Cart/Checkout.css';
+import { Link } from 'react-router-dom';
 
 
 const CheckOut = () => {
@@ -40,6 +42,19 @@ const CheckOut = () => {
   return (
     <div className="producto-detail-container">
         <h2 className="producto-detail-titulo">CheckOut</h2>
+
+        <div className='resumen'>
+        {
+            cart.map((prod) => (
+                <div className='producto-resumen' key={prod.id}>
+                    <h2>{prod.title}</h2>
+                    <p>${prod.price * prod.contador}</p>
+                    <p>Cantidad: {prod.contador}</p>
+                </div>
+            ))
+        }
+          <Link to="/cart"><button className='cambios-btn'>Realizar cambios</button></Link>
+        </div>
         <form className="formulario" onSubmit={handleSubmit(comprar)}>
           <input type="text" placeholder='Nombre' {...register("nombre")} />
           <input type="email" placeholder='Email' {...register("email")} />
