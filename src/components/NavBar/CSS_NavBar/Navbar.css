@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  text-align: center;
 }
 
 .menu {
@@ -11,8 +10,109 @@
   gap: 1rem;
   justify-content: space-around;
   align-items: center;
+  padding-top: .1rem;
+  background-image: url(../../../assets/navbar.png);
+}
+
+.usuario-container {
   background-color: rgb(145, 158, 158);
-  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  padding: .2rem;
+  padding-right: 2rem;
+  justify-content: end;
+}
+
+.usuario-logueado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35rem;
+}
+
+.registrate-aqui:hover {
+  color: black;
+  font-weight: bolder;
+}
+
+.login-btn {
+  background: linear-gradient(-50deg, rgb(37, 37, 37) 0%, rgb(95, 95, 95) 49%, rgb(133, 132, 132) 100%);
+  border: solid rgb(39, 39, 39) 1px;
+  box-shadow: rgba(36, 36, 36, 0.212) .2rem .2rem;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.login-btn:hover {
+  background: linear-gradient(-50deg, rgb(73, 80, 48) 0%,rgb(141, 151, 94) 49%,rgb(203, 228, 147) 100%);
+  color: black;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-50deg, rgb(73, 80, 48) 0%,rgb(141, 151, 94) 49%,rgb(203, 228, 147) 100%);
+  border: solid rgb(39, 39, 39) 1px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  display: none;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.iniciar, .usuario-btn {
+  background-color: rgb(89, 99, 99);
+  color: white;
+  background: linear-gradient(-50deg, rgb(97, 97, 97) 0%, rgb(129, 129, 129) 49%, rgb(133, 132, 132) 100%);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: solid rgb(39, 39, 39) 1px;
+}
+
+.iniciar:hover, .usuario-btn:hover {
+  box-shadow: inset 0 0 0 50px #98b156d2;
+  border: solid white 1px;
+  font-weight: 900;
+  color: black;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.login-container.show-container {
+  display: flex;
+  gap: 1rem;
 }
 
 .logo {
@@ -25,23 +125,16 @@
 
 .boton-menu {
   background-color: transparent;
-  padding-right: 0;
-  border: 0;
-  align-items: center;
-  color: #eff7ff;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  gap: 1rem;
-  font-weight: 600;
-  padding: 1rem;
-  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .active {
-  background-color: #ffffff;
+  background-color: rgb(185, 192, 192);
   color: #000000;
   border-radius: 1.5rem 1.5rem 0 0;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .inactive {
@@ -61,3 +154,10 @@
 .arrow {
   width: 1.5rem;
 }
+
+.usuario-btn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+

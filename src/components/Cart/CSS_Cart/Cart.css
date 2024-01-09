@@ -1,59 +1,114 @@
 .producto-container-cart {
-    display: flex;
-    flex-direction: row;
-    min-width: 80vw;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  min-width: 80vw;
+  justify-content: space-around;
+}
+
+.producto-detail-titulo {
+  margin-top: 1rem;
 }
 
 .precio-total {
-    background-color: rgb(145, 158, 158);
-    padding: 1rem;
-    border-radius: 2rem;
+  background: linear-gradient(
+    -50deg,
+    rgb(37, 37, 37) 0%,
+    rgb(95, 95, 95) 49%,
+    rgb(133, 132, 132) 100%
+  );
+  padding: 1rem;
+  border-radius: 2rem;
+  border: solid rgb(39, 39, 39) 1px;
+  box-shadow: rgba(36, 36, 36, 0.212) 0.5rem 0.5rem;
+}
+
+.precio-total:hover {
+  background: linear-gradient(
+    -50deg,
+    rgb(73, 80, 48) 0%,
+    rgb(141, 151, 94) 49%,
+    rgb(203, 228, 147) 100%
+  );
+  cursor: default;
 }
 
 .vaciar-btn {
-    padding: .4rem;
-    border-radius: 1rem;
-    border: solid .1rem black;
-    background-color: rgb(199, 59, 59);
-    transition: ease .3s;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  border: solid 0.1rem black;
+  background-color: rgb(199, 59, 59);
+  transition: ease 0.3s;
 }
 
 .comprar-btn {
-    padding: .4rem;
-    border-radius: 1rem;
-    border: solid .1rem black;
-    background-color: rgb(62, 172, 104);
-    transition: ease .3s;
-    color: black;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  border: solid 0.1rem black;
+  background-color: rgb(62, 172, 104);
+  transition: ease 0.3s;
+  color: black;
 }
 
 .vaciar-btn:hover {
-    background-color: rgb(221, 140, 140);
-    color: black;
+  background-color: rgb(221, 140, 140);
+  color: black;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 
 .comprar-btn:hover {
-    background-color: rgb(139, 231, 162);
-    color: black;
+  background-color: rgb(139, 231, 162);
+  color: black;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .container-btn-cart {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .producto-imagen-cart {
-    width: 5rem;
+  width: 5rem;
 }
 
 .eliminar-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: ease 0.3s;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .eliminar-btn:hover {
-    filter: invert(100%);
+  filter: invert(100%);
+}
+
+.producto-detail-container {
+  gap: 1rem;
 }

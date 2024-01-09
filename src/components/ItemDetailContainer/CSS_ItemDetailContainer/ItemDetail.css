@@ -1,72 +1,173 @@
-.producto-detail-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.producto-detail-titulo {
-    font-size: 3rem;
-}
-
-.aclaracion {
-    text-decoration: underline;
-}
-
-.producto-detail-imagen {
-    width: 20rem;
-}
-
-.producto-detail-precio {
-    text-align: center;
+.producto-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .detalle-container {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+  background-color: blue;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    -50deg,
+    rgb(37, 37, 37) 0%,
+    rgb(95, 95, 95) 49%,
+    rgb(133, 132, 132) 100%
+  );
+  border-radius: 2rem;
+  padding: 1rem;
+  border: solid rgb(39, 39, 39) 1px;
+  box-shadow: rgba(36, 36, 36, 0.212) 0.5rem 0.5rem;
+}
+
+.detalle-container:hover {
+  background: linear-gradient(
+    -50deg,
+    rgb(73, 80, 48) 0%,
+    rgb(141, 151, 94) 49%,
+    rgb(203, 228, 147) 100%
+  );
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.producto-detail-titulo {
+  font-size: 3rem;
+}
+
+.aclaracion {
+  text-decoration: underline;
+}
+
+.producto-detail-imagen {
+  width: 20rem;
+}
+
+.producto-detail-precio {
+  text-align: center;
 }
 
 .precio-container {
-    background-color: rgb(49, 49, 49);
-    border-radius: 2rem;
-    padding: 1rem;
-    min-width: 10rem;
-    text-align: center;
+  padding: 1rem;
+  min-width: 10rem;
+  text-align: center;
 }
 
 .categoria-container {
-    background-color: rgb(49, 49, 49);
-    border-radius: 2rem;
-    padding: 1rem;
-    min-width: 10rem;
-    text-align: center;
+  padding: 1rem;
+  min-width: 10rem;
+  text-align: center;
 }
 
 .producto-detail-descripcion {
-    background-color: rgb(49, 49, 49);
-    border-radius: 2rem;
-    padding: 2rem;
-    text-align: center;
-    max-width: 50rem;
+  background: linear-gradient(
+    -50deg,
+    rgb(37, 37, 37) 0%,
+    rgb(95, 95, 95) 49%,
+    rgb(133, 132, 132) 100%
+  );
+  border: solid rgb(39, 39, 39) 1px;
+  box-shadow: rgba(36, 36, 36, 0.212) 0.5rem 0.5rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  max-width: 50rem;
+}
+
+.producto-detail-descripcion:hover {
+  background: linear-gradient(
+    -50deg,
+    rgb(73, 80, 48) 0%,
+    rgb(141, 151, 94) 49%,
+    rgb(203, 228, 147) 100%
+  );
+  color: black;
+  font-weight: 900;
 }
 
 .comprar-component {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.menos-btn, .añadir-btn, .mas-btn {
-    padding: .4rem;
-    border-radius: 1rem;
-    border: solid .1rem black;
-    background-color: rgb(49, 49, 49);
-    transition: ease .3s;
+.menos-btn,
+.añadir-btn,
+.mas-btn {
+  background-color: rgb(89, 99, 99);
+  color: white;
+  background: linear-gradient(
+    -50deg,
+    rgb(97, 97, 97) 0%,
+    rgb(129, 129, 129) 49%,
+    rgb(133, 132, 132) 100%
+  );
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: solid rgb(39, 39, 39) 1px;
+  cursor: pointer;
 }
 
-.menos-btn:hover, .añadir-btn:hover, .mas-btn:hover {
-    background-color: white;
-    color: black;
+.menos-btn:hover,
+.mas-btn:hover {
+  box-shadow: inset 0 0 0 50px #98b156d2;
+}
+
+.añadir-btn:hover {
+  box-shadow: inset 0 0 0 50px #98b156d2;
+  border: solid white 1px;
+  font-weight: 900;
+  color: black;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.producto-detail-titulo {
+  color: black;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider-btn {
+  background-color: transparent;
+  cursor: pointer;
+  height: 1rem;
+  border: none;
 }

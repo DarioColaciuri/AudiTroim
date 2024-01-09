@@ -19,3 +19,7 @@
   padding: 0 0.25rem;
   border-radius: 0.25rem;
 }
+
+.boton-menu.boton-carrito.disabled {
+  cursor: default;
+}

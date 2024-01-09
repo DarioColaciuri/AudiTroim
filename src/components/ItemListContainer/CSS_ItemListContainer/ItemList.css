@@ -1,15 +1,23 @@
 .productos-frame {
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
+  margin-top: 6.5rem;
   align-items: center;
   justify-content: center;
 }
 
 .productos-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
+}
+
+.titulo-productos {
+  color: rgb(36, 36, 36);
+}
+
+.error {
+  color: red;
 }
