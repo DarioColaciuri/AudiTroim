@@ -73,3 +73,15 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width:950px) {
+  .container-general {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-general {
+    margin-top: 9rem;
+  }
+}

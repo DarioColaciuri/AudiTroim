@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../Context/CartContext";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
 import "./CSS_Cart/Cart.css";
 import { toast } from "react-toastify";

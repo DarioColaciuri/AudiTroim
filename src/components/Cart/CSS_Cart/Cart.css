@@ -60,6 +60,7 @@
   animation-iteration-count: 3s;
   animation-fill-mode: forwards;
   animation-play-state: running;
+  cursor: pointer;
 }
 
 .comprar-btn:hover {
@@ -73,6 +74,7 @@
   animation-iteration-count: 3s;
   animation-fill-mode: forwards;
   animation-play-state: running;
+  cursor: pointer;
 }
 
 @keyframes bounce {
@@ -111,4 +113,28 @@
 
 .producto-detail-container {
   gap: 1rem;
+}
+
+@media (max-width:950px) {
+  .producto-detail-titulo {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width:692px) {
+  .producto-detail-titulo {
+    margin-top: 7.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .producto-detail-titulo {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 514px) {
+  .producto-detail-titulo {
+    margin-top: 12rem;
+  }
 }

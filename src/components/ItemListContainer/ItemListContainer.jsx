@@ -31,10 +31,7 @@ const ItemListContainer = () => {
         setTitle(category ? aMayuscula(category) : "Productos");
         setError(null);
       } catch (error) {
-        console.error("Error al cargar productos: ", error);
-        setError(
-          "Error al cargar los productos. Por favor, intenta nuevamente."
-        );
+        setError("Error al cargar los productos. Por favor, intenta nuevamente.");
       } finally {
         setLoading(false);
       }
@@ -48,7 +45,6 @@ const ItemListContainer = () => {
       const user = auth.currentUser;
 
       if (!user) {
-        console.error("Usuario no autenticado");
         toast.error("Por favor, inicie sesión para añadir a favoritos.");
         return;
       }
@@ -57,7 +53,6 @@ const ItemListContainer = () => {
       const productosSnapshot = await getDoc(productosRef);
 
       if (!productosSnapshot.exists()) {
-        console.error("El producto no existe");
         toast.error("Error al añadir a favoritos. Producto no válido.");
         return;
       }
@@ -84,7 +79,6 @@ const ItemListContainer = () => {
       const docRef = await addDoc(favoritosRef, nuevoFavorito);
       toast.success(`Añadiste "${productData.title}" a favoritos`);
     } catch (error) {
-      console.error("Error al agregar a favoritos: ", error);
       toast.error("Error al añadir a favoritos, por favor inicie sesión.");
     } finally {
       setLoading(false);

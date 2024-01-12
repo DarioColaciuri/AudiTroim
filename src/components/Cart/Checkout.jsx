@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import "./CSS_Cart/Checkout.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CheckOut = () => {
   const [pedidoId, setPedidoId] = useState("");
@@ -41,7 +43,7 @@ const CheckOut = () => {
         vaciar();
       })
       .catch((error) => {
-        console.error("Error al procesar la compra: ", error);
+        toast.error("Error con la compra", error);
       })
       .finally(() => {
         setLoading(false);
@@ -62,7 +64,6 @@ const CheckOut = () => {
           class="giphy-embed"
           allowFullScreen
         ></iframe>
-        <a href="https://giphy.com/gifs/trump-consequences-NTur7XlVDUdqM"></a>
       </div>
     );
   }

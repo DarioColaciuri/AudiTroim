@@ -13,6 +13,7 @@ import Loader from "../Loader/Loader";
 const Favoritos = () => {
   const [favoritos, setFavoritos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const user = auth.currentUser;
 
   useEffect(() => {
@@ -33,7 +34,7 @@ const Favoritos = () => {
           setFavoritos(favoritosData);
         }
       } catch (error) {
-        console.error("Error al obtener favoritos: ", error);
+        setError("Error al obtener favoritos");
       } finally {
         setLoading(false);
       }
@@ -53,7 +54,7 @@ const Favoritos = () => {
 
       setFavoritos(nuevosFavoritos);
     } catch (error) {
-      console.error("Error al eliminar favorito: ", error);
+      setError("Error al eliminar favorito: " + error.message);
     } finally {
       setLoading(false);
     }
@@ -65,22 +66,39 @@ const Favoritos = () => {
 
   return (
     <div className="historial-container">
-      <h1>Tus Favoritos</h1>
-      {favoritos.length === 0 ? (
-        <p>No tienes productos en favoritos.</p>
+      {error ? (
+        <div className="error-container">
+          <h1 className="titulo-error">Error</h1>
+          <p>{error}</p>
+          <iframe
+          src="https://giphy.com/embed/NTur7XlVDUdqM"
+          width="480"
+          height="270"
+          frameBorder="0"
+          class="giphy-embed"
+          allowFullScreen
+        ></iframe>
+        </div>
       ) : (
-        <ul className="favoritos-container">
-          {favoritos.map((favorito) => (
-            <li className="producto-container" key={favorito.id}>
-              <h3>{favorito.title}</h3>
-              <img className="imagen-historial" src={favorito.image} alt={favorito.title}/>
-              <p>Precio: ${favorito.price}</p>
-              <button className="eliminar-btn" onClick={() => eliminarFavorito(favorito.id)}>
-                <img className="hand" src="./src/assets/cross.png" alt="hand icon"/>
-              </button>
-            </li>
-          ))}
-        </ul>
+        <>
+          <h1>Tus Favoritos</h1>
+          {favoritos.length === 0 ? (
+            <p>No tienes productos en favoritos.</p>
+          ) : (
+            <ul className="favoritos-container">
+              {favoritos.map((favorito) => (
+                <li className="producto-container" key={favorito.id}>
+                  <h3>{favorito.title}</h3>
+                  <img className="imagen-historial" src={favorito.image} alt={favorito.title} />
+                  <p>Precio: ${favorito.price}</p>
+                  <button className="eliminar-btn" onClick={() => eliminarFavorito(favorito.id)}>
+                    <img className="hand" src="./src/assets/cross.png" alt="hand icon" />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </>
       )}
     </div>
   );

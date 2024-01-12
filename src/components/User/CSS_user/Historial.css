@@ -1,35 +1,65 @@
 .historial-container {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .titulo-historial {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
+  color: black;
 }
 
-.compra-container { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.compra-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .imagen-historial {
-    width: 5rem;
+  width: 5rem;
 }
 
 .separador {
-    padding: 2rem;
+  padding: 2rem;
+}
+
+.titulo-error {
+  color: black;
 }
 
 .favoritos-container {
-    display: flex;
-    padding-top: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 950px) {
+    .historial-container {
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 692px) {
+    .historial-container {
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .historial-container {
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: 514px) {
+    .historial-container {
+        padding-top: 10rem;
+    }
 }

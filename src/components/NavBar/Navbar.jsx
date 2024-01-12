@@ -34,7 +34,7 @@ const Navbar = () => {
       await signOut(auth);
       setUser(null);
     } catch (error) {
-      console.error("Error al cerrar sesión:", error.message);
+      toast.error("Error al cerrar sesion");
     }
   };
 
@@ -56,7 +56,6 @@ const Navbar = () => {
       await signInWithEmailAndPassword(auth, email, password);
       setShowContainer(false);
     } catch (error) {
-      console.error("Error al iniciar sesión:", error.message);
       toast.error("Error al iniciar sesion. Usuario o contraseña no validos.");
     }
   };

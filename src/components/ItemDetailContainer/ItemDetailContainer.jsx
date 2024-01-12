@@ -8,6 +8,7 @@ import Loader from "../Loader/Loader";
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const id = useParams().id;
   const [contador, setContador] = useState(1);
 
@@ -18,12 +19,16 @@ const ItemDetailContainer = () => {
       const docRef = doc(db, "productos", id);
       try {
         const resp = await getDoc(docRef);
-        setItem({
-          ...resp.data(),
-          id: resp.id,
-        });
+        if (resp.exists()) {
+          setItem({
+            ...resp.data(),
+            id: resp.id,
+          });
+        } else {
+          setError("El producto no existe.");
+        }
       } catch (error) {
-        console.error("Error al cargar el detalle del producto: ", error);
+        setError("Error al cargar el detalle del producto");
       } finally {
         setLoading(false);
       }
@@ -34,7 +39,16 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      {loading ? (<Loader />) : (item && (<ItemDetail item={item} contador={contador} setContador={setContador}/>))}
+      {loading ? (
+        <Loader />
+      ) : error ? (
+        <div className="error-container">
+          <h1 className="titulo-error">Error</h1>
+          <p>{error}</p>
+        </div>
+      ) : (
+        item && <ItemDetail item={item} contador={contador} setContador={setContador} />
+      )}
     </div>
   );
 };
