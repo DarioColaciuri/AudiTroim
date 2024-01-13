@@ -32,7 +32,7 @@ const CartWidget = ({ hacerClick, activarBoton }) => {
     <div>
       <Link to={cart.length > 0 ? "/cart" : "#"}>
         <button className={`boton-menu boton-carrito ${activarBoton === "cart" ? "active" : ""} ${isCartPage ? "disabled" : ""}`} onClick={handleClick} disabled={isCartPage}>
-          <img className="cart" src="./src/assets/cart.png" alt="cart icon" />
+          <img className="cart" src="cart.png" alt="cart icon" />
           Cart
           <span id="numerito" className="numerito">{cartNumber()}</span>
         </button>

@@ -107,7 +107,7 @@ const Navbar = () => {
           <ul className="menu">
             <li>
               <Link to="/">
-                <img className="logo" src="./src/assets/logo.png" alt="logo" onClick={() => hacerClick("todos")}/>
+                <img className="logo" src="logo.png" alt="logo" onClick={() => hacerClick("todos")}/>
               </Link>
             </li>
             <li>
@@ -118,7 +118,7 @@ const Navbar = () => {
             <li>
               <Link to="/">
                 <button id="todos" className={`boton-menu ${activarBoton === "todos" ? "active" : ""}`} onClick={() => hacerClick("todos")}>
-                  <img className="hand" src="./src/assets/hand.png" alt="hand icon"/>
+                  <img className="hand" src="hand.png" alt="hand icon"/>
                   Todos
                 </button>
               </Link>
@@ -126,7 +126,7 @@ const Navbar = () => {
             <li>
               <Link to="/productos/guitarras">
                 <button id="guitarras" className={`boton-menu ${activarBoton === "guitarras" ? "active" : ""}`} onClick={() => hacerClick("guitarras")}>
-                  <img className="guitar" src="./src/assets/guitar.png" alt="guitar icon"/>
+                  <img className="guitar" src="guitar.png" alt="guitar icon"/>
                   Guitarras
                 </button>
               </Link>
@@ -134,7 +134,7 @@ const Navbar = () => {
             <li>
               <Link to="/productos/bajos">
                 <button id="bajos" className={`boton-menu ${activarBoton === "bajos" ? "active" : ""}`} onClick={() => hacerClick("bajos")}>
-                  <img className="bass" src="./src/assets/bass.png" alt="bass icon"/>
+                  <img className="bass" src="bass.png" alt="bass icon"/>
                   Bajos
                 </button>
               </Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
             <li>
               <Link to="/productos/electronica">
                 <button id="electronica" className={`boton-menu ${activarBoton === "electronica" ? "active" : ""}`} onClick={() => hacerClick("electronica")}>
-                  <img className="electronic" src="./src/assets/electronic.png" alt="electronic icon"/>
+                  <img className="electronic" src="electronic.png" alt="electronic icon"/>
                   Electronica
                 </button>
               </Link>

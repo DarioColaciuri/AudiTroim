@@ -11,7 +11,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: .1rem;
-  background-image: url(../../../assets/navbar.png);
+  background-image: url(/navbar.png);
 }
 
 .usuario-container {
