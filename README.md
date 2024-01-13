@@ -1,3 +1,53 @@
-*Gif de funcionalidad:*
+<img align="right" height="200" src="https://i.postimg.cc/QN707DFY/logo-1.png"  />
 
-https://www.dropbox.com/scl/fi/nd1gxxv6qxr5g82yo730u/15072-49925-segunda-pre-entrega-del-proyecto-final-darioguitarras-2023-12-19-11-53-24.gif?rlkey=lbx88egyh1h8okzmazoz355p5&dl=0
+###
+
+<h1 align="center">Auditroim 🎹</h1>
+
+###
+
+<p align="center">E-commerce creado con React y Firebase por<br>Dario Colaciuri.</p>
+
+###
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="40" alt="firebase logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="40" alt="photoshop logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" height="40" alt="illustrator logo"  />
+</div>
+
+###
+
+<h3 align="left">Gif de funcionalidad</h3>
+
+###
+
+<div align="center">
+  <img height="300" src="https://firebasestorage.googleapis.com/v0/b/auditroim.appspot.com/o/Funcionalidad.gif?alt=media&token=cc29a894-7932-419d-b203-f06cc3c6e9a7"  />
+</div>
+
+###
+
+<h3 align="left">Librerias</h3>
+
+###
+
+<p align="left">Se utilizó React-Toastify para mostrar notificaciones en la parte superior derecha de la pantalla.<br>https://fkhadra.github.io/react-toastify/introduction</p>
+
+###
+
+<div align="center">
+  <img height="200" src="https://i.postimg.cc/FR2zwRJ2/Toastify.gif"  />
+</div>
+
+###
