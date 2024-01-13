@@ -33,7 +33,7 @@
 ###
 
 <div align="center">
-  <img height="300" src="https://firebasestorage.googleapis.com/v0/b/auditroim.appspot.com/o/Funcionalidad.gif?alt=media&token=cc29a894-7932-419d-b203-f06cc3c6e9a7"  />
+  
 </div>
 
 ###
