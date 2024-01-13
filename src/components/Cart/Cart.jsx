@@ -56,7 +56,7 @@ const Cart = () => {
           <button className="eliminar-btn" onClick={() => borrar(prod.id)}>
             <img
               className="hand"
-              src="./src/assets/cross.png"
+              src="cross.png"
               alt="hand icon"
             />
           </button>

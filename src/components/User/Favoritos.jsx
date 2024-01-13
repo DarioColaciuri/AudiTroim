@@ -92,7 +92,7 @@ const Favoritos = () => {
                   <img className="imagen-historial" src={favorito.image} alt={favorito.title} />
                   <p>Precio: ${favorito.price}</p>
                   <button className="eliminar-btn" onClick={() => eliminarFavorito(favorito.id)}>
-                    <img className="hand" src="./src/assets/cross.png" alt="hand icon" />
+                    <img className="hand" src="cross.png" alt="hand icon" />
                   </button>
                 </li>
               ))}
