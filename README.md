@@ -40,6 +40,7 @@
   <li>Función de guardar productos en favoritos y eliminarlos para cada usuario registrado.</li>
   <li>Historial de compras realizadas para usuarios registrados.</li>
   <li>Spinner de carga para traer o enviar información a la base de datos.</li>
+  <li>Ingreso al detalle del producto con slider de imagenes para cada uno.</li>
   <li><a href="https://auditroim.vercel.app">Deploy</a> con Vercel.</li>
 </ul>
 
