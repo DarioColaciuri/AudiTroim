@@ -28,12 +28,12 @@
 
 ###
 
-<h3 align="left">Gif de funcionalidad</h3>
+<h3 align="left">Funcionalidad</h3>
 
 ###
 
 <div align="center">
-  
+    <img height="200" src="https://i.postimg.cc/sg1wsj6T/Funcionalidad-1.gif"  />
 </div>
 
 ###
