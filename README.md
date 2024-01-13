@@ -32,17 +32,24 @@
 
 ###
 
-<div align="center">
-    <img height="200" src="https://i.postimg.cc/sg1wsj6T/Funcionalidad-1.gif"  />
-</div>
+<ul>
+  <li>Autenticación con <a href="https://firebase.google.com">Firebase</a>.</li>
+  <li>Navegación a través de rutas con <a href="https://www.npmjs.com/package/react-router-dom">React Router</a>.</li>
+  <li>Context usando .Provider y transferencia de información entre componentes a través de props.</li>
+  <li>Carrito de compras persistente en LocalStorage.</li>
+  <li>Función de guardar productos en favoritos y eliminarlos para cada usuario registrado.</li>
+  <li>Historial de compras realizadas para usuarios registrados.</li>
+  <li>Spinner de carga para traer o enviar información a la base de datos.</li>
+  <li><a href="https://auditroim.vercel.app">Deploy</a> con Vercel.</li>
+</ul>
 
 ###
 
-<h3 align="left">Librerias</h3>
+<h3 align="left">Librerías</h3>
 
 ###
 
-<p align="left">Se utilizó React-Toastify para mostrar notificaciones en la parte superior derecha de la pantalla.<br>https://fkhadra.github.io/react-toastify/introduction</p>
+<p align="left">Se utilizó <a href="https://fkhadra.github.io/react-toastify/introduction">React-Toastify</a> para mostrar notificaciones en la parte superior derecha de la pantalla.</p>
 
 ###
 
